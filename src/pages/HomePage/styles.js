@@ -20,6 +20,7 @@ export const Title = styled.h1`
   
   @media only screen and (min-width: 1440px) {
     font-size: 2.5rem;
+  }
 `;
 
 export const Section = styled.section`
