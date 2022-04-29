@@ -12,7 +12,7 @@ const HomePage = () => {
           <source src={backVideo} type="video/mp4" />
         </VideoDiv>
         <Section>
-          <Title>Porque Reciclar o seu Lixo?</Title>
+          <Title>Por que Reciclar o seu Lixo?</Title>
           <Div>
             <figure>
               <img src={ImageHome} alt="recicle" />
