@@ -2,6 +2,7 @@ import Header from "../../components/Header";
 import backVideo from "../../assets/video/videoHome.mp4";
 import { Section, Title, VideoDiv, Div, Main, Text } from "./styles";
 import ImageHome from "../../assets/image/imgHome.png";
+import Button from "../../components/Button/button"
 
 const HomePage = () => {
   return (
@@ -30,7 +31,9 @@ const HomePage = () => {
               </Text>
             </article>
           </Div>
-          <button>BOTAO</button>
+          <Button callback ={""}>
+            Saiba como descartar o seu lixo 
+           </Button>
         </Section>
       </Main>
     </>
