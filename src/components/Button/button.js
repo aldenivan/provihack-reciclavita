@@ -1,17 +1,11 @@
-const Button = () => {
+import { Button } from "./styled";
+
+const ButtonDefault = ({ callback, children }) => {
   return (
-    <div>
-      <button
-        type={"submit"}
-        fullWidth
-        variant={"contained"}
-        color={"primary"}
-        onClick={() => {}}
-      >
-        Saiba como descartar o seu lixo .
-      </button>
-    </div>
+    <>
+      <Button onClick={callback}>{children}</Button>
+    </>
   );
 };
 
-export default Button;
+export default ButtonDefault;
