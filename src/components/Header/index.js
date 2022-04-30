@@ -11,10 +11,10 @@ const Header = () => {
           <img src={LogoHeader} alt="logo_header" />{" "}
         </Link>
         <ul>
-          <Link to="/"> Home </Link>
-          <Link to="/Information">Informativo</Link>
-          <Link to="/Dashboard"> Postos de Coleta </Link>
-          <Link to="/About Us"> Sobre Nós </Link>
+          <li><Link to="/"> Home </Link></li>
+          <li><Link to="/Information">Informativo</Link></li>
+          <li><Link to="/Dashboard"> Postos de Coleta </Link></li>
+          <li><Link to="/About Us"> Sobre Nós </Link></li>
         </ul>
       </Navbar>
     </header>
