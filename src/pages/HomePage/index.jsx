@@ -1,6 +1,6 @@
 import Header from "../../components/Header";
-import backVideo from "../../assets/video/videoHome.mp4";
-import { Section, Title, VideoDiv, Div, Main, Text } from "./styles";
+
+import { Title, Div, Main, Text } from "./styles";
 import ImageHome from "../../assets/image/imgHome.png";
 import Button from "../../components/Button/button";
 

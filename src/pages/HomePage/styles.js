@@ -2,7 +2,10 @@ import styled from "styled-components";
 
 export const Main = styled.main`
   background-color: #052d53;
-  height: 100vh;
+
+  @media only screen and (min-width: 768px) {
+    height: 100vh;
+  }
 `;
 
 export const Title = styled.h1`
@@ -12,36 +15,34 @@ export const Title = styled.h1`
 
   @media only screen and (min-width: 768px) {
     margin: 30px 0;
-      
-    }
-  
+  }
+
   @media only screen and (min-width: 1440px) {
     font-size: 2.5rem;
   }
-`;
-
-export const Section = styled.section`
-  width: 100%;
-  text-align: center; ;
 `;
 
 export const Div = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  align-items: flex-end;
+  align-items: center;
   padding: 30px 0 30px;
   box-sizing: border-box;
+
+  @media only screen and (min-width: 1024px) {
+    align-items: flex-end;
+  }
 
   & > figure > img {
     width: 90vw;
     border-radius: 10px;
-    
 
     @media only screen and (min-width: 768px) {
       width: 45vw;
       margin: 20px 40px 0 20px;
       border-radius: 20px;
+      align-items: flex-end;
     }
   }
 
@@ -53,7 +54,6 @@ export const Div = styled.div`
 
     @media only screen and (min-width: 768px) {
       margin: 0 20px 10px 0;
-
       padding: 20px;
     }
 
@@ -62,7 +62,7 @@ export const Div = styled.div`
       font-size: 1.3rem;
     }
     @media only screen and (min-width: 1600px) {
-      font-size: 2.5rem;
+      font-size: 2rem;
     }
   }
 
