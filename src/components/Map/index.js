@@ -1,18 +1,25 @@
-import React, { useEffect, useState, Component } from "react";
+import ReactDOM from "react-dom";
+import React, { useState, useEffect } from "react";
+
 import {
   GoogleMap,
+  StandaloneSearchBox,
   LoadScript,
   Marker,
-  Autocomplete,
 } from "@react-google-maps/api";
 
-// const ScriptLoaded =
-//   require("@react-google-maps/api/src/docs/ScriptLoaded").default;
+const readPlace = (places) => {
+  places.map((p) => console.log(p));
+};
 
 const containerStyle = {
   width: "100%",
   height: "575px",
 };
+
+const lib = ["places"];
+
+let places = [];
 
 let center = {};
 
@@ -22,7 +29,16 @@ navigator.geolocation.getCurrentPosition(function (position) {
 });
 
 function MyComponent() {
+  const [searchBox, setSearchBox] = useState(null);
   const [currentPosition, setCurrentPosition] = useState({});
+
+  const onPlacesChanged = () => {
+    places.push(searchBox.getPlaces());
+    readPlace(places);
+  };
+  const onSBLoad = (ref) => {
+    setSearchBox(ref);
+  };
 
   const onMarkerDragEnd = (e) => {
     const lat = e.latLng.lat();
@@ -42,54 +58,50 @@ function MyComponent() {
     navigator.geolocation.getCurrentPosition(success);
   }, []);
 
-  const onLoad = (marker) => {
-    console.log("marker: ", marker);
-  };
   return (
-    // <ScriptLoaded>
-    <LoadScript googleMapsApiKey="AIzaSyBdEBEyzNny2A7V4RlyyPpuFoHaZXnZThw">
-      <GoogleMap
-        mapContainerStyle={containerStyle}
-        center={currentPosition}
-        zoom={13}
-      >
+    <LoadScript
+      googleMapsApiKey="AIzaSyBdEBEyzNny2A7V4RlyyPpuFoHaZXnZThw"
+      libraries={lib}
+    >
+      <GoogleMap mapContainerStyle={containerStyle} center={center} zoom={12}>
         {currentPosition.lat ? (
           <Marker
-            onLoad={onLoad}
+            onLoad={onSBLoad}
             position={currentPosition}
             onDragEnd={(e) => onMarkerDragEnd(e)}
             draggable={true}
           />
         ) : null}
-
-        {/* <Autocomplete
-            onLoad={this.onLoad}
-            onPlaceChanged={this.onPlaceChanged}
+        <>
+          <StandaloneSearchBox
+            onPlacesChanged={onPlacesChanged}
+            onLoad={onSBLoad}
           >
             <input
               type="text"
-              placeholder="Customized your placeholder"
+              placeholder="Procure aqui onde descartar seu lixo"
               style={{
-                boxSizing: `border-box`,
+                boxSizing: "border-box",
                 border: `1px solid transparent`,
-                width: `240px`,
-                height: `32px`,
+                width: `270px`,
+                height: `40px`,
                 padding: `0 12px`,
                 borderRadius: `3px`,
                 boxShadow: `0 2px 6px rgba(0, 0, 0, 0.3)`,
                 fontSize: `14px`,
                 outline: `none`,
+                margin: "center",
                 textOverflow: `ellipses`,
                 position: "absolute",
-                left: "50%",
-                marginLeft: "-120px",
+                top: "40px",
+                marginLeft: "50%",
               }}
             />
-          </Autocomplete> */}
+          </StandaloneSearchBox>
+        </>
       </GoogleMap>
     </LoadScript>
-    // </ScriptLoaded>
   );
 }
 
-export default React.memo(MyComponent);
+export default MyComponent;
