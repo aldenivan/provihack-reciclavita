@@ -146,8 +146,16 @@ export const Question = styled.div`
   margin: 10px 0;
   padding: 10px 0;
   border-top: 1px solid #7C3DCB;
+
+
   :hover{
     cursor: pointer;
+  }
+
+  @media only screen and (min-width: 768px) {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 15px;
   }
 `;
 
