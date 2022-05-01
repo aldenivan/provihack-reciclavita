@@ -81,3 +81,78 @@ export const Text = styled.p`
     margin: 20px 0;
   }
 `;
+
+export const InfoDiv = styled(Div)`
+  background-color: #fff;
+  padding: 20px;
+  flex-direction: column;
+  justify-content: center;
+
+  &>h1 {
+    font-size: 1.77rem;
+    text-align: center;
+    margin: 10px 0;
+  }
+
+  @media only screen and (min-width: 1024px) {
+    align-items: center;
+    
+  }
+
+`;
+
+
+export const Container = styled.div`
+  width: 100%;
+
+  @media only screen and (min-width: 768px) {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-around;
+  }
+
+ 
+`;
+
+
+export const PostsDiv = styled.div`  
+  &>h2 {
+    color: #7C3DCB;
+    text-align: left;
+    margin: 20px 0;
+  }
+
+  @media only screen and (min-width: 768px) {
+    max-width: 40%;
+    flex: content;
+  }
+
+  @media only screen and (min-width: 1024px) {
+    /* max-width: 50%; */
+  }
+
+`;
+
+export const DisposalDiv = styled(PostsDiv)`
+  &>h2{
+    color: #3758C5; 
+  }
+`;
+
+
+export const Question = styled.div`
+  font-weight: 700;
+  font-size: 1.0rem;
+  margin: 10px 0;
+  padding: 10px 0;
+  border-top: 1px solid #7C3DCB;
+  :hover{
+    cursor: pointer;
+  }
+`;
+
+
+export const Answer = styled.div`
+  font-size: 1.0rem;
+
+`;
