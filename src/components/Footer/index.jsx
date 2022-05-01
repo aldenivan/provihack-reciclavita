@@ -1,11 +1,9 @@
-import { AppInfo, Container, InfoList } from "./styles";
+import { AppInfo, Footer, InfoList } from "./styles";
 import LogoHeader from "../../assets/image/logo.png";
 
 const FooterComponent = () => {
-
   return (
-    <Container>
-
+    <Footer>
       <div>
         <figure>
           <img src={LogoHeader} alt="logo_footer" />{" "}
@@ -19,12 +17,8 @@ const FooterComponent = () => {
           <li>Desenvolvido por TUTOR</li>
         </InfoList>
       </AppInfo>
-
-
-    </Container>
-  )
-
-
-}
+    </Footer>
+  );
+};
 
 export default FooterComponent;
