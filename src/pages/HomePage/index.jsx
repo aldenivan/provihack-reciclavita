@@ -17,72 +17,24 @@ import ButtonDefault from "../../components/Button/button";
 import { Fragment, useState } from "react";
 
 import { IoIosArrowUp, IoIosArrowDown } from "react-icons/io";
+import FooterComponent from "../../components/Footer";
+import { points, disposal } from "../../assets/questionsList";
 
 const HomePage = () => {
-  const points = [
-    {
-      question: "Como eu posso fazer a localização dos postos?",
-      answer:
-        "A tempor donec eleifend et arcu felis ullamcorper purus. Quis ut odio felis, elementum aliquam consectetur facilisis feugiat.",
-    },
-    {
-      question: "Como eu posso fazer a localização dos postos?",
-      answer:
-        "A tempor donec eleifend et arcu felis ullamcorper purus. Quis ut odio felis, elementum aliquam consectetur facilisis feugiat.",
-    },
-    {
-      question: "Como eu posso fazer a localização dos postos?",
-      answer:
-        "A tempor donec eleifend et arcu felis ullamcorper purus. Quis ut odio felis, elementum aliquam consectetur facilisis feugiat.",
-    },
-    {
-      question: "Como eu posso fazer a localização dos postos?",
-      answer:
-        "A tempor donec eleifend et arcu felis ullamcorper purus. Quis ut odio felis, elementum aliquam consectetur facilisis feugiat.",
-    },
-  ];
-
-  const disposal = [
-    {
-      question: "Como posso estar realizando o descarte correto?",
-      answer:
-        "A tempor donec eleifend et arcu felis ullamcorper purus. Quis ut odio felis, elementum aliquam consectetur facilisis feugiat.",
-    },
-    {
-      question: "Como posso estar realizando o descarte correto?",
-      answer:
-        "A tempor donec eleifend et arcu felis ullamcorper purus. Quis ut odio felis, elementum aliquam consectetur facilisis feugiat.",
-    },
-    {
-      question: "Como posso estar realizando o descarte correto?",
-      answer:
-        "A tempor donec eleifend et arcu felis ullamcorper purus. Quis ut odio felis, elementum aliquam consectetur facilisis feugiat.",
-    },
-    {
-      question: "Como posso estar realizando o descarte correto?",
-      answer:
-        "A tempor donec eleifend et arcu felis ullamcorper purus. Quis ut odio felis, elementum aliquam consectetur facilisis feugiat.",
-    },
-    {
-      question: "Como posso estar realizando o descarte correto?",
-      answer:
-        "A tempor donec eleifend et arcu felis ullamcorper purus. Quis ut odio felis, elementum aliquam consectetur facilisis feugiat.",
-    },
-  ];
 
   const [isOpen, setIsOpen] = useState(false);
   const [toOpen, setToOpen] = useState(null);
   const [toOpenDisposal, setToOpenDisposal] = useState(null);
-  const [isDisposalOpen, setIsDisposalOpen] = useState(false)
+  const [isDisposalOpen, setIsDisposalOpen] = useState(false);
 
-  const openPostsAnswer = (e) => {
+  const openPostsAnswer = (index) => {
     setIsOpen(!isOpen);
-    setToOpen(e);
+    setToOpen(index);
   };
 
-  const openDisposalAnswer = (e) => {
+  const openDisposalAnswer = (index) => {
     setIsDisposalOpen(!isDisposalOpen);
-    setToOpenDisposal(e);
+    setToOpenDisposal(index);
   };
 
   return (
@@ -134,7 +86,9 @@ const HomePage = () => {
                 <Fragment key={index}>
                   <Question onClick={() => openDisposalAnswer(index)}>
                     {question.question}
-                    <p>{isDisposalOpen ? <IoIosArrowUp /> : <IoIosArrowDown />}</p>
+                    <p>
+                      {isDisposalOpen ? <IoIosArrowUp /> : <IoIosArrowDown />}
+                    </p>
                   </Question>
                   {isDisposalOpen && toOpenDisposal === index ? (
                     <Answer>{question.answer}</Answer>
@@ -146,6 +100,7 @@ const HomePage = () => {
             </DisposalDiv>
           </Container>
         </InfoDiv>
+        <FooterComponent />
       </Main>
     </>
   );
