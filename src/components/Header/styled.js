@@ -13,7 +13,6 @@ export const Navbar = styled.nav`
   font-family: "Lato";
   font-weight: 700;
   font-size: 16px;
-  /* line-height: 19px; */
   color: white;
 
   @media only screen and (min-width: 768px) {
@@ -35,6 +34,14 @@ export const Navbar = styled.nav`
     width: 45%;
     list-style: none;
 
+    & > li {
+      border-bottom: 2px solid transparent;
+
+      :hover {
+        border-bottom: 2px solid #9df;
+      }
+    }
+
     a {
       text-decoration: none;
       color: white;
@@ -42,8 +49,7 @@ export const Navbar = styled.nav`
     }
 
     @media only screen and (min-width: 768px) {
-      flex-direction: row;
-      /* justify-content: space-around; */
+      flex-direction: row;      
       align-items: center;
     }
   }

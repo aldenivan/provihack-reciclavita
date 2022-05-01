@@ -88,7 +88,7 @@ export const InfoDiv = styled(Div)`
   flex-direction: column;
   justify-content: center;
 
-  &>h1 {
+  & > h1 {
     font-size: 1.77rem;
     text-align: center;
     margin: 10px 0;
@@ -96,11 +96,8 @@ export const InfoDiv = styled(Div)`
 
   @media only screen and (min-width: 1024px) {
     align-items: center;
-    
   }
-
 `;
-
 
 export const Container = styled.div`
   width: 100%;
@@ -110,14 +107,11 @@ export const Container = styled.div`
     align-items: baseline;
     justify-content: space-around;
   }
-
- 
 `;
 
-
-export const PostsDiv = styled.div`  
-  &>h2 {
-    color: #7C3DCB;
+export const PostsDiv = styled.div`
+  & > h2 {
+    color: #7c3dcb;
     text-align: left;
     margin: 20px 0;
   }
@@ -126,41 +120,34 @@ export const PostsDiv = styled.div`
     max-width: 40%;
     flex: content;
   }
-
-  @media only screen and (min-width: 1024px) {
-    /* max-width: 50%; */
-  }
-
+  
 `;
 
 export const DisposalDiv = styled(PostsDiv)`
-  &>h2{
-    color: #3758C5; 
+  & > h2 {
+    color: #3758c5;
   }
 `;
 
-
 export const Question = styled.div`
   font-weight: 700;
-  font-size: 1.0rem;
+  font-size: 1rem;
   margin: 10px 0;
   padding: 10px 0;
-  border-top: 1px solid #7C3DCB;
+  border-top: 1px solid #7c3dcb;
 
-
-  :hover{
+  :hover {
     cursor: pointer;
   }
 
   @media only screen and (min-width: 768px) {
     display: flex;
     justify-content: space-between;
-    padding: 10px 15px;
+    padding: 10px 0;
   }
 `;
 
-
 export const Answer = styled.div`
-  font-size: 1.0rem;
-
+  font-size: 1rem;
+  transition-delay: 500ms;
 `;
