@@ -16,9 +16,9 @@ const CardsProfiles = () => {
         
     }
     
-    return Profiles.map((profile) =>{    
+    return Profiles.map((profile,index) =>{    
         return (
-        <ProfilesStyled>
+        <ProfilesStyled key={index}>
             <img  src={profile.image} alt={`foto perfil ${profile.name}`} />
             <section>
                 <h2>{profile.name}</h2>

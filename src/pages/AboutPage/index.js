@@ -15,15 +15,13 @@ const AboutPage = () => {
                 </ul>
                 <BoxAboutApp>
                     <h1> Sobre o App </h1> 
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                        Etiam eget ligula eu lectus lobortis condimentum. Aliquam nonummy auctor massa. 
-                        Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. 
-                        Nulla at risus. Quisque purus magna, auctor et,
-                        sagittis ac, posuere eu, lectus. Nam mattis, felis ut adipiscing.
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                        Etiam eget ligula eu lectus lobortis condimentum. Aliquam nonummy auctor massa. 
-                        Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. 
-                        Nulla at risus</p>
+                    <p>A reciclavita surgiu em maio de 2022 a fim de contribuir ativamente com o aumento da 
+                        reciclagem consciente, apos um levantamento feito, foi apontado que o motivo maior 
+                        das pessoas em não reciclarem seus materiais, seria por falta de informações 
+                        sobre os locais, para o fazer.
+                        Para suprir essa necessidade indicamos as pessoas o local correto, com 
+                        informações necessárias para fazer esse descarte sem mais dificuldades.
+                        </p>
                 </BoxAboutApp>
             </BoxContent>
         </Container>
