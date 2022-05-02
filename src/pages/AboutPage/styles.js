@@ -13,7 +13,7 @@ display:flex;
 align-items: center;
 justify-content:space-between;
 width:80%;
-margin:30px auto;
+margin:10px auto;
 height:400px;
 ul{
 display: flex;

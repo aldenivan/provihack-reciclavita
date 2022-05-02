@@ -62,7 +62,7 @@ const HomePage = () => {
           </figure>
         </Div>
         <InfoDiv>
-          <h1>Dúvidas Frequentes</h1>
+          <h1>Dúvidas Frequentes<a name="duvidas_frequentes"></a></h1>
           <Container>
             <PostsDiv>
               <h2>Postos de coleta</h2>
