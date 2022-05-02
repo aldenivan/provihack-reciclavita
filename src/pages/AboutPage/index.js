@@ -1,7 +1,8 @@
 import React from 'react'
 import Header from '../../components/Header'
-import {BoxContent, BoxAboutApp, Container} from './styles'
+import Footer from '../../components/Footer'
 import CardsProfiles from '../../components/CardsProfiles'
+import {BoxContent, BoxAboutApp, Container} from './styles'
 
 const AboutPage = () => {   
     return (
@@ -24,6 +25,7 @@ const AboutPage = () => {
                         </p>
                 </BoxAboutApp>
             </BoxContent>
+            <Footer/>
         </Container>
     )
 }
