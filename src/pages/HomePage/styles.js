@@ -52,6 +52,11 @@ export const Div = styled.div`
     background-color: #f5f5f5;
     /* text-align: center; */
 
+    .button {
+      text-decoration: none;
+      color: white;
+    }
+
     @media only screen and (min-width: 768px) {
       margin: 0 20px 10px 0;
       padding: 20px;
@@ -120,7 +125,6 @@ export const PostsDiv = styled.div`
     max-width: 40%;
     flex: content;
   }
-  
 `;
 
 export const DisposalDiv = styled(PostsDiv)`

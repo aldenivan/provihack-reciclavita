@@ -17,9 +17,9 @@ export const Button = styled.button`
   :hover {
     /* cursor: pointer; */
     /* box-shadow: 1px 3px #73b3d9; */
-    box-shadow: 0px 0px 20px -6px rgba(5,45,83,0.75);
-  -webkit-box-shadow: 0px 0px 20px -6px rgba(5,45,83,0.75);
-  -moz-box-shadow: 0px 0px 20px -6px rgba(5,45,83,0.75);
+    box-shadow: 0px 0px 20px -6px rgba(5, 45, 83, 0.75);
+    -webkit-box-shadow: 0px 0px 20px -6px rgba(5, 45, 83, 0.75);
+    -moz-box-shadow: 0px 0px 20px -6px rgba(5, 45, 83, 0.75);
   }
   background-color: #052d53;
   color: white;
@@ -27,6 +27,4 @@ export const Button = styled.button`
   @media only screen and (min-width: 768px) {
     margin: 15px 0;
   }
-
-
 `;

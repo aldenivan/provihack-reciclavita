@@ -8,6 +8,10 @@ const FooterComponent = () => {
         <figure>
           <img src={LogoHeader} alt="logo_footer" />{" "}
         </figure>
+        <p>
+          Esta pagina foi desenvolvida para auxiliar e concientizar sobre o
+          descarte de lixo
+        </p>
       </div>
       <AppInfo>
         <InfoList>

@@ -1,4 +1,5 @@
 import Header from "../../components/Header";
+import { Link } from "react-router-dom";
 
 import {
   Title,
@@ -21,7 +22,6 @@ import FooterComponent from "../../components/Footer";
 import { points, disposal } from "../../assets/questionsList";
 
 const HomePage = () => {
-
   const [isOpen, setIsOpen] = useState(false);
   const [toOpen, setToOpen] = useState(null);
   const [toOpenDisposal, setToOpenDisposal] = useState(null);
@@ -50,8 +50,10 @@ const HomePage = () => {
               aumentamos a vida útil do aterro sanitário para onde são
               destinados os resíduos gerais coletados em nossa cidade hoje”
             </Text>
-            <ButtonDefault callback={() => null}>
-              Saiba onde descartar
+            <ButtonDefault>
+              <Link to="/dashboard" class="button">
+                Saiba onde descartar
+              </Link>
             </ButtonDefault>
           </article>
           <figure>
