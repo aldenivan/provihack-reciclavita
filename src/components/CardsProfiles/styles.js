@@ -3,7 +3,7 @@ import styled from 'styled-components'
 export const ProfilesStyled = styled.li`
 display: flex;
 align-items:center;
-
+font-size:14px;
 color:white;
     img{
         width:50px;
@@ -22,4 +22,8 @@ color:white;
    span p{
        margin-left: 10px;
    }
+   h2{
+       font-size:16px;
+   }
+   
 `

@@ -5,47 +5,47 @@ export const Profiles = [
     email: 'lucascardoso64@gmail.com',
     linkedin: 'https://www.linkedin.com/in/devklucas/',
     github: 'https://github.com/devklucas',
-    description: 'Dev front end estudante da Kenzie Academy'
+    description: 'Dev front end estudante em Kenzie Academy'
     },
     {
         name:'Aldenivan',
         image: 'https://avatars.githubusercontent.com/u/82845074?v=4',
         email: ' aldenivan1207@gmail.com',
-        linkedin: '',
+        linkedin: 'https://linkedin.com',
         github: 'https://github.com/aldenivan',
-        description: 'Uma descriçao qualquer'
+        description: 'Dev fullstack estudante em Kenzie Academy'
     },
     {
         name:'Roberto',
         image: 'https://avatars.githubusercontent.com/u/79763201?v=4',
         email: 'rbressanelli@gmail.com',
-        linkedin: '',
+        linkedin: 'https://www.linkedin.com/in/robertobressanelli/',
         github: 'https://github.com/rbressanelli',
-        description: 'Uma descriçao qualquer'
+        description: 'Dev fullstack estudante em Kenzie Academy'
     },
     {
         name:'Ayla',
         image: 'https://avatars.githubusercontent.com/u/86736303?v=4',
         email: 'aylasilva1524@outlook.com',
-        linkedin: '',
+        linkedin: 'https://www.linkedin.com/in/ayla-silva-dos-santos-0977a9223/',
         github: 'https://github.com/Ayla1524',
-        description: 'Uma descriçao qualquer'
+        description: 'Dev Front End formada pela Labenu'
     },
     {
         name:'Matheus',
-        image: 'https://www.ecp.org.br/wp-content/uploads/2017/12/default-avatar-300x300.png',
+        image: 'https://avatars.githubusercontent.com/u/81971884?height=180&v=4&width=180',
         email: 'mateus_bueno10@hotmail.com',
-        linkedin: 'https://www.linkedin.com/in/devklucas/',
-        github: 'https://github.com/devklucas',
-        description: 'Uma descriçao qualquer'
+        linkedin: '',
+        github: '',
+        description: ''
     },
     {
         name:'Alexandre',
-        image: 'https://www.ecp.org.br/wp-content/uploads/2017/12/default-avatar-300x300.png',
+        image: 'https://lh3.googleusercontent.com/a-/AOh14Gjv2gYZoipA5gdRNXrTI9tqts_ihZZGodImGlPvUQ=s96-c?height=180&width=180',
         email: 'arxcarvalho@gmail.com ',
         linkedin: '',
         github: '',
-        description: 'Uma descriçao qualquer'
+        description: 'Dev Fullstack estudante em Kenzie Academy'
     },
 ]
 
