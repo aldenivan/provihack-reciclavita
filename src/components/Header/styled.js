@@ -26,8 +26,16 @@ export const Navbar = styled.nav`
     width: 150px;
   }
 
-  ul {
-    display: flex;
+  .icon-menu {
+    width: 40px;
+
+    @media only screen and (min-width: 800px) {
+      display: none;
+    }
+  }
+
+  .lista {
+    display: none;
     justify-content: space-between;
     flex-direction: column;
     align-items: left;
@@ -48,9 +56,10 @@ export const Navbar = styled.nav`
       font-size: 18px;
     }
 
-    @media only screen and (min-width: 768px) {
-      flex-direction: row;      
+    @media only screen and (min-width: 800px) {
+      flex-direction: row;
       align-items: center;
+      display: flex;
     }
   }
 `;

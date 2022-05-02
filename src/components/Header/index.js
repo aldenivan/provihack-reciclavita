@@ -1,5 +1,6 @@
 import LogoHeader from "../../assets/image/logo.png";
 import { Navbar } from "./styled";
+import IconMenu from "../../assets/Icons/Hamburguer.png";
 
 import { Link } from "react-router-dom";
 const Header = () => {
@@ -7,10 +8,12 @@ const Header = () => {
     <header>
       <Navbar>
         <Link to="/">
-          {" "}
           <img src={LogoHeader} alt="logo_header" />{" "}
         </Link>
-        <ul>
+
+        <img src={IconMenu} alt="icon-menu" className="icon-menu" />
+
+        <ul className="lista">
           <li>
             <Link to="/"> Home </Link>
           </li>
@@ -18,10 +21,10 @@ const Header = () => {
             <a href="#duvidas_frequentes">Informativo</a>
           </li>
           <li>
-            <Link to="/Dashboard"> Postos de Coleta </Link>
+            <Link to="/dashboard"> Postos de Coleta </Link>
           </li>
           <li>
-            <Link to="/AboutUs"> Sobre Nós </Link>
+            <Link to="/aboutUs"> Sobre Nós </Link>
           </li>
         </ul>
       </Navbar>
